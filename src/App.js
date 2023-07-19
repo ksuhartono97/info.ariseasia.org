@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Flex } from "@chakra-ui/react";
+import Navbar from "./components/navbar/Navbar";
+import MainContainer from "./components/MainContainer";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Flex flexGrow={1} display="flex" h="100vh" direction="column">
+      <BrowserRouter>
+        <>
+          <Navbar />
+          <MainContainer />
+        </>
+      </BrowserRouter>
+    </Flex>
   );
-}
+};
 
 export default App;
