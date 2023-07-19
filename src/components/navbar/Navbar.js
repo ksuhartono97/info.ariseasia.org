@@ -98,7 +98,7 @@ const Navbar = () => {
           </Text>
         </HStack>
   
-        <Box display={["flex", "none"]} h="100%">
+        <Box display={"flex"} h="100%">
           <Image
             w="1.5em"
             minW="1.5em"
