@@ -97,7 +97,7 @@ const Navbar = () => {
             INFO @ ARISE ASIA 2023
           </Text>
         </HStack>
-  
+
         <Box display={"flex"} h="100%">
           <Image
             w="1.5em"
