@@ -1,8 +1,8 @@
-import { Flex,Box } from "@chakra-ui/react";
+import { Flex, Box } from "@chakra-ui/react";
 import HeroTitleSection from "./HeroTitleSection";
 import CardSection from "./CardSection";
 
-const HomeContainer = () => {
+const OverviewContainer = ({title, items}) => {
   return (
     <Box position="relative">
       <Box
@@ -14,14 +14,13 @@ const HomeContainer = () => {
         left="0"
         right="0"
         zIndex="3"
-      >
-      </Box>
+      ></Box>
       <Flex direction="column" zIndex="0">
-        <HeroTitleSection />
-        <CardSection />
+        <HeroTitleSection title={title}/>
+        <CardSection items={items} />
       </Flex>
     </Box>
   );
 };
 
-export default HomeContainer;
+export default OverviewContainer;

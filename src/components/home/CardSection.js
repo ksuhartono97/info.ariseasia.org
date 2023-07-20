@@ -1,50 +1,31 @@
-import { Center, Stack, Text, Heading } from "@chakra-ui/react";
-import { Card, CardHeader } from '@chakra-ui/react'
+import {
+  Card,
+  CardHeader,
+  Center,
+  Container,
+  Heading,
+  Stack,
+} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
-const CardSection = () => {
-    return (
-        <Stack spacing='4'>
+const CardSection = ({ items }) => {
+  return (
+    <Container maxW="xl">
+      <Stack spacing="4">
+        {items.map((item) => (
+          <Link to={item.link}>
             <Card size="lg">
-                <CardHeader>
-                    <Heading alignContent='center' size='lg'>
-                        <Center>
-                            Program Schedule
-                        </Center>
-                    </Heading>
-                </CardHeader>
+              <CardHeader>
+                <Heading alignContent="center" size="lg">
+                  <Center>{item.title}</Center>
+                </Heading>
+              </CardHeader>
             </Card>
-
-            <Card size="lg">
-                <CardHeader>
-                    <Heading alignContent='center' size='lg'>
-                        <Center>
-                            Workshop
-                        </Center>
-                    </Heading>
-                </CardHeader>
-            </Card>
-
-            <Card size="lg">
-                <CardHeader>
-                    <Heading alignContent='center' size='lg'>
-                        <Center>
-                            Venue Map
-                        </Center>
-                    </Heading>
-                </CardHeader>
-            </Card>
-
-            <Card size="lg">
-                <CardHeader>
-                    <Heading alignContent='center' size='lg'>
-                        <Center>
-                            Other Info
-                        </Center>
-                    </Heading>
-                </CardHeader>
-            </Card>
-        </Stack>
-    );
+          </Link>
+        ))}
+      </Stack>
+    </Container>
+  );
 };
 
 export default CardSection;
