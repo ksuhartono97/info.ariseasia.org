@@ -13,7 +13,7 @@ const CardSection = ({ items }) => {
     <Container maxW="xl">
       <Stack spacing="4">
         {items.map((item) => (
-          <a href={item.link}>
+          <a href={`${process.env.PUBLIC_URL}${item.link}`}>
             <Card size="lg">
               <CardHeader>
                 <Heading alignContent="center" size="lg">
