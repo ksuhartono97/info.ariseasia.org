@@ -8,7 +8,7 @@ import {
   Container,
 } from "@chakra-ui/react";
 
-const AccordionSection = ({ items }) => {
+const AccordionSection = ({ items }) => (
   <Container maxW="xl">
     <Accordion allowMultiple allowToggle>
       {items &&
@@ -28,7 +28,7 @@ const AccordionSection = ({ items }) => {
           </AccordionItem>
         ))}
     </Accordion>
-  </Container>;
-};
+  </Container>
+);
 
 export default AccordionSection;

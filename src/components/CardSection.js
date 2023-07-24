@@ -1,6 +1,6 @@
 import { Card, CardHeader, Heading, Stack, Text } from "@chakra-ui/react";
 
-const CardSection = ({ items }) => {
+const CardSection = ({ items }) => (
   <Stack spacing={4}>
     {items &&
       items.map((item) => (
@@ -17,7 +17,7 @@ const CardSection = ({ items }) => {
           </Card>
         </a>
       ))}
-  </Stack>;
-};
+  </Stack>
+);
 
 export default CardSection;

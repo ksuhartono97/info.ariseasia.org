@@ -1,6 +1,6 @@
 import { Center, Container, Text } from "@chakra-ui/react";
 
-const LayoutContainer = ({ children, title }) => {
+const LayoutContainer = ({ children, title }) => (
   <Container maxW="xl" pb={60}>
     <Center pt="18vh" pb="8vh">
       <Text
@@ -13,7 +13,7 @@ const LayoutContainer = ({ children, title }) => {
       </Text>
     </Center>
     {children}
-  </Container>;
-};
+  </Container>
+);
 
 export default LayoutContainer;

@@ -4,7 +4,7 @@ import theme from "./theme";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider, Container } from "@chakra-ui/react";
 
-const App = () => {
+const App = () => (
   <ChakraProvider theme={theme}>
     <Container minHeight="100vh">
       <BrowserRouter>
@@ -12,7 +12,7 @@ const App = () => {
         <MainContainer />
       </BrowserRouter>
     </Container>
-  </ChakraProvider>;
-};
+  </ChakraProvider>
+);
 
 export default App;
