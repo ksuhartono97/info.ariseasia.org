@@ -13,7 +13,7 @@ const CardSection = ({ items }) => {
     <Container maxW="xl">
       <Stack spacing="4">
         {items.map((item) => (
-          <Link to={item.link}>
+          <a href={item.link}>
             <Card size="lg">
               <CardHeader>
                 <Heading alignContent="center" size="lg">
@@ -21,7 +21,7 @@ const CardSection = ({ items }) => {
                 </Heading>
               </CardHeader>
             </Card>
-          </Link>
+          </a>
         ))}
       </Stack>
     </Container>

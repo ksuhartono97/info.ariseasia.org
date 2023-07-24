@@ -8,7 +8,7 @@ const MainContainer = () => {
   const homeItems = [
     { title: "Program Schedule", link: "/schedule" },
     { title: "Workshop", link: "/workshops" },
-    { title: "Venue Map", link: "/map" },
+    { title: "Venue Maps", link: "/maps" },
     { title: "Other Info", link: "/other" },
   ];
   const scheduleItems = [
@@ -25,11 +25,18 @@ const MainContainer = () => {
     { title: "Session 4", link: "#" },
   ];
   const mapItems = [
-    { title: "Map Link 1", link: "#" },
-    { title: "Map Link 2", link: "#" },
-    { title: "Map Link 3", link: "#" },
-    { title: "Map Link 4", link: "#" },
-    { title: "Map Link 5", link: "#" },
+    {
+      title: "Level 1 Map",
+      link: `${process.env.PUBLIC_URL}/images/level-1-map.pdf`,
+    },
+    {
+      title: "Level 2 Map",
+      link: `${process.env.PUBLIC_URL}/images/level-2-map.pdf`,
+    },
+    {
+      title: "Walking Directions",
+      link: `${process.env.PUBLIC_URL}/images/walking-directions.pdf`,
+    },
   ];
   const otherItems = [
     { title: "Link 1", link: "#" },
@@ -61,8 +68,8 @@ const MainContainer = () => {
           }
         />
         <Route
-          path="/map"
-          element={<OverviewContainer title="Venue Map" items={mapItems} />}
+          path="/maps"
+          element={<OverviewContainer title="Venue Maps" items={mapItems} />}
         />
         <Route
           path="/other"
