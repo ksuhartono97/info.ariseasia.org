@@ -1,10 +1,11 @@
 import { Card, CardHeader, Heading, Stack, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const CardSection = ({ items }) => (
   <Stack spacing={4}>
     {items &&
       items.map((item) => (
-        <a href={item.link}>
+        <LinkWrapper link={item.link}>
           <Card size="lg">
             <CardHeader>
               <Heading textAlign="center" size={["sm", "md"]}>
@@ -15,9 +16,20 @@ const CardSection = ({ items }) => (
               </Text>
             </CardHeader>
           </Card>
-        </a>
+        </LinkWrapper>
       ))}
   </Stack>
 );
+
+const LinkWrapper = ({ children, link }) =>
+  link.includes(".pdf") ||
+  link.includes(".png") ||
+  link.includes("https://") ? (
+    <a href={link} target="_blank" rel="noreferrer">
+      {children}
+    </a>
+  ) : (
+    <Link to={link}>{children}</Link>
+  );
 
 export default CardSection;

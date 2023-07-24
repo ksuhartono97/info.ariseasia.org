@@ -16,6 +16,7 @@ import {
   Center,
   VStack,
 } from "@chakra-ui/react";
+import { Link as RLink } from "react-router-dom";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -84,8 +85,8 @@ const Navbar = () => {
       >
         <HStack
           gap={[0, 1]}
-          as={Link}
-          href="/"
+          as={RLink}
+          to="/"
           _hover={{ textDecoration: "none" }}
         >
           <Image src={process.env.PUBLIC_URL + "/logo512.png"} h="80%" />
