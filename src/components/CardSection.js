@@ -24,6 +24,8 @@ const CardSection = ({ items }) => (
 const LinkWrapper = ({ children, link }) =>
   link.includes(".pdf") ||
   link.includes(".png") ||
+  link.includes(".jpg") ||
+  link.includes(".jpeg") ||
   link.includes("https://") ? (
     <a href={link} target="_blank" rel="noreferrer">
       {children}

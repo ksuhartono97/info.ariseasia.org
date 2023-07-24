@@ -20,32 +20,32 @@ const MainContainer = () => {
     },
   ];
   const scheduleItems = [
-    { title: "Day 1 - Tue, July 25", link: "/schedule/day-1.pdf" },
-    { title: "Day 2 - Wed, July 26", link: "/schedule/day-2.pdf" },
-    { title: "Day 3 - Thu, July 27", link: "/schedule/day-3.pdf" },
-    { title: "Day 4 - Fri, July 28", link: "/schedule/day-4.pdf" },
-    { title: "Day 5 - Sat, July 29", link: "/schedule/day-5.pdf" },
+    { title: "Day 1 - Tue, July 25", link: "/schedule/day-1.jpg" },
+    { title: "Day 2 - Wed, July 26", link: "/schedule/day-2.jpg" },
+    { title: "Day 3 - Thu, July 27", link: "/schedule/day-3.jpg" },
+    { title: "Day 4 - Fri, July 28", link: "/schedule/day-4.jpg" },
+    { title: "Day 5 - Sat, July 29", link: "/schedule/day-5.jpg" },
   ];
   const workshopItems = [
     {
       title: "Wed, July 26",
       subtitle: "1:30 pm - 2:45 pm",
-      link: "/workshop/workshop-1.pdf",
+      link: "/workshop/workshop-1.jpeg",
     },
     {
       title: "Wed, July 26",
       subtitle: "3:15 pm - 4:30 pm",
-      link: "/workshop/workshop-2.pdf",
+      link: "/workshop/workshop-2.jpeg",
     },
     {
       title: "Fri, July 28",
       subtitle: "1:30 pm - 2:45 pm",
-      link: "/workshop/workshop-3.pdf",
+      link: "/workshop/workshop-3.jpeg",
     },
     {
       title: "Fri, July 28",
       subtitle: "3:15 pm - 4:30 pm",
-      link: "/workshop/workshop-4.pdf",
+      link: "/workshop/workshop-4.jpeg",
     },
   ];
   const speakersItems = [
