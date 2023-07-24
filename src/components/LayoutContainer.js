@@ -7,7 +7,7 @@ const LayoutContainer = ({ children, title }) => (
         fontSize={["2xl", "4xl", "5xl"]}
         textStyle="unbounded_bold"
         textAlign="center"
-        letterSpacing={["1px", "3px"]}
+        letterSpacing="1px"
       >
         {title}
       </Text>
