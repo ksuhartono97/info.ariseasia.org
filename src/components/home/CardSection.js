@@ -19,6 +19,7 @@ const CardSection = ({ items }) => {
                 <Heading alignContent="center" size="lg">
                   <Center>{item.title}</Center>
                 </Heading>
+                  <Center>{item.subtitle}</Center>
               </CardHeader>
             </Card>
           </a>

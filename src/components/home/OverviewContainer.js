@@ -1,8 +1,7 @@
 import { Flex, Box } from "@chakra-ui/react";
 import HeroTitleSection from "./HeroTitleSection";
-import CardSection from "./CardSection";
 
-const OverviewContainer = ({title, items}) => {
+const OverviewContainer = ({ children, title }) => {
   return (
     <Box position="relative">
       <Box
@@ -16,8 +15,8 @@ const OverviewContainer = ({title, items}) => {
         zIndex="3"
       ></Box>
       <Flex direction="column" zIndex="0">
-        <HeroTitleSection title={title}/>
-        <CardSection items={items} />
+        <HeroTitleSection title={title} />
+        {children}
       </Flex>
     </Box>
   );
