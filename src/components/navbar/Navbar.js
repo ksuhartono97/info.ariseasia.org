@@ -1,12 +1,13 @@
 import React from "react";
+import BackButton from "../back-button/BackButton";
 import {
   Flex,
   HStack,
   Text,
-  Tag,
-  Link,
   Image,
   Box,
+  Tag,
+  Link,
   Drawer,
   DrawerOverlay,
   DrawerContent,
@@ -41,10 +42,12 @@ const Navbar = () => {
                   </Text>
                 </Center>
 
-                <Link href="/program">Program Schedule</Link>
-                <Link href="/workshop">Workshop</Link>
-                <Link href="/map">Venue Map</Link>
-                <Link href="/other">Other Info</Link>
+                <Link href="/schedule">Program Schedule</Link>
+                <Link href="/workshop">Workshops</Link>
+                <Link href="/speakers">Speaker Bios</Link>
+                <Link href="/translation">Session Translation Zoom Links</Link>
+                <Link href="/breakouts">Breakout Room Assignments</Link>
+                <Link href="/faq">FAQ</Link>
 
                 <Tag
                   bgColor="#FF6B00"
@@ -83,6 +86,7 @@ const Navbar = () => {
         flexDir="row"
         px={5}
       >
+        <BackButton />
         <HStack
           gap={[0, 1]}
           as={RLink}
@@ -98,6 +102,7 @@ const Navbar = () => {
             INFO @ ARISE ASIA 2023
           </Text>
         </HStack>
+        <Box w="1.5em" />
 
         <Box display={"flex"} h="100%">
           <Image
