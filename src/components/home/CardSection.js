@@ -6,6 +6,7 @@ import {
   Heading,
   Stack,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const CardSection = ({ items }) => {
   return (
