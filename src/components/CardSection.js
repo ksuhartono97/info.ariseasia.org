@@ -6,7 +6,7 @@ const CardSection = ({ items }) => (
     {items &&
       items.map((item) => (
         <LinkWrapper link={item.link}>
-          <Card size="lg">
+          <Card>
             <CardHeader>
               <Heading textAlign="center" size={["sm", "md"]}>
                 {item.title}
