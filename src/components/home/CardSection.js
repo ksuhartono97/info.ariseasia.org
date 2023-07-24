@@ -6,7 +6,6 @@ import {
   Heading,
   Stack,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
 const CardSection = ({ items }) => {
   return (
@@ -19,7 +18,7 @@ const CardSection = ({ items }) => {
                 <Heading alignContent="center" size="lg">
                   <Center>{item.title}</Center>
                 </Heading>
-                  <Center>{item.subtitle}</Center>
+                <Center>{item.subtitle}</Center>
               </CardHeader>
             </Card>
           </a>
