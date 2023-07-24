@@ -117,7 +117,7 @@ const MainContainer = () => {
         <Route
           path="/"
           element={
-            <OverviewContainer title="Arisa Asia Info">
+            <OverviewContainer title="Arise Asia Info">
               <CardSection items={homeItems} />
             </OverviewContainer>
           }
