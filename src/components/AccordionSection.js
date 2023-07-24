@@ -9,10 +9,10 @@ import {
 } from "@chakra-ui/react";
 
 const AccordionSection = ({ items }) => {
-  return (
-    <Container maxW="xl">
-      <Accordion allowMultiple allowToggle>
-        {items.map((item) => (
+  <Container maxW="xl">
+    <Accordion allowMultiple allowToggle>
+      {items &&
+        items.map((item) => (
           <AccordionItem>
             <h2>
               <AccordionButton>
@@ -27,9 +27,8 @@ const AccordionSection = ({ items }) => {
             <AccordionPanel pb={4}>{item.description}</AccordionPanel>
           </AccordionItem>
         ))}
-      </Accordion>
-    </Container>
-  );
+    </Accordion>
+  </Container>;
 };
 
 export default AccordionSection;

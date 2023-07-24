@@ -1,20 +1,18 @@
-import "./App.css";
-import { Flex } from "@chakra-ui/react";
-import Navbar from "./components/navbar/Navbar";
 import MainContainer from "./components/MainContainer";
+import Navbar from "./components/navbar/Navbar";
+import theme from "./theme";
 import { BrowserRouter } from "react-router-dom";
+import { ChakraProvider, Container } from "@chakra-ui/react";
 
 const App = () => {
-  return (
-    <Flex flexGrow={1} display="flex" h="100vh" direction="column">
+  <ChakraProvider theme={theme}>
+    <Container minHeight="100vh">
       <BrowserRouter>
-        <>
-          <Navbar />
-          <MainContainer />
-        </>
+        <Navbar />
+        <MainContainer />
       </BrowserRouter>
-    </Flex>
-  );
+    </Container>
+  </ChakraProvider>;
 };
 
 export default App;

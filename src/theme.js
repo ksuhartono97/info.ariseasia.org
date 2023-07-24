@@ -1,4 +1,3 @@
-import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
 import "@fontsource/dm-sans/700.css";
@@ -6,6 +5,7 @@ import "@fontsource/unbounded/400.css";
 import "@fontsource/unbounded/500.css";
 import "@fontsource/unbounded/700.css";
 import "@fontsource/unbounded/900.css";
+import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   fonts: {

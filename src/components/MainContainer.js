@@ -1,10 +1,9 @@
-import React from "react";
-import { chakra } from "@chakra-ui/react";
-import NotFoundPage from "./NotFoundPage";
-import { Route, Routes } from "react-router-dom";
 import AccordionSection from "./AccordionSection";
-import CardSection from "./home/CardSection";
-import OverviewContainer from "./home/OverviewContainer";
+import CardSection from "./CardSection";
+import LayoutContainer from "./LayoutContainer";
+import NotFoundPage from "./NotFoundPage";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
 const MainContainer = () => {
   const homeItems = [
@@ -112,59 +111,57 @@ const MainContainer = () => {
   ];
 
   return (
-    <chakra.main maxH="100vh" flexGrow={1} overflowY="auto" id="main-container">
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <OverviewContainer title="Arise Asia Info">
-              <CardSection items={homeItems} />
-            </OverviewContainer>
-          }
-        />
-        <Route
-          path="/schedule"
-          element={
-            <OverviewContainer title="Program Schedule">
-              <CardSection items={scheduleItems} />
-            </OverviewContainer>
-          }
-        />
-        <Route
-          path="/workshops"
-          element={
-            <OverviewContainer title="Workshops">
-              <CardSection items={workshopItems} />
-            </OverviewContainer>
-          }
-        />
-        <Route
-          path="/speakers"
-          element={
-            <OverviewContainer title="Speakers">
-              <CardSection items={speakersItems} />
-            </OverviewContainer>
-          }
-        />
-        <Route
-          path="/speakers/plenary"
-          element={
-            <OverviewContainer title="Plenary Speakers">
-              <AccordionSection items={plenarySpeakers} />
-            </OverviewContainer>
-          }
-        />
-        <Route
-          path="/speakers/workshop"
-          element={
-            <OverviewContainer title="Workshop Speakers">
-              <AccordionSection items={workshopSpeakers} />
-            </OverviewContainer>
-          }
-        />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </chakra.main>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <LayoutContainer title="Arise Asia Info">
+            <CardSection items={homeItems} />
+          </LayoutContainer>
+        }
+      />
+      <Route
+        path="/schedule"
+        element={
+          <LayoutContainer title="Program Schedule">
+            <CardSection items={scheduleItems} />
+          </LayoutContainer>
+        }
+      />
+      <Route
+        path="/workshops"
+        element={
+          <LayoutContainer title="Workshops">
+            <CardSection items={workshopItems} />
+          </LayoutContainer>
+        }
+      />
+      <Route
+        path="/speakers"
+        element={
+          <LayoutContainer title="Speakers">
+            <CardSection items={speakersItems} />
+          </LayoutContainer>
+        }
+      />
+      <Route
+        path="/speakers/plenary"
+        element={
+          <LayoutContainer title="Plenary Speakers">
+            <AccordionSection items={plenarySpeakers} />
+          </LayoutContainer>
+        }
+      />
+      <Route
+        path="/speakers/workshop"
+        element={
+          <LayoutContainer title="Workshop Speakers">
+            <AccordionSection items={workshopSpeakers} />
+          </LayoutContainer>
+        }
+      />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 };
 
