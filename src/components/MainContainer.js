@@ -26,6 +26,10 @@ const MainContainer = () => {
     { title: "Breakout Room Assignments", link: "/breakouts" },
     { title: "Night Time Fellowship Info", link: "/fellowship-night.png" },
     {
+      title: "GO NOW Applications",
+      link: "https://form.jotform.com/231630446225449",
+    },
+    {
       title: "Spotify Playlist",
       link: "https://open.spotify.com/playlist/7nlYXCTiicyRnnuGSH7zh7?si=ODnIjmzCRgCi81YbHMUa3Q",
     },

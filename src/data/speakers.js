@@ -11,7 +11,7 @@ export const plenarySpeakers = [
     subtitle: "Youth For Christ, Sri Lanka",
     role: "Senior Coordinator",
     description:
-      "Asiri Fernando is serving with 'Youth for Christ Sri Lanka, leading the work in the mountain regions. He is actively involved in teaching and giving pastoral care to staff and volunteers engaged in grassroots evangelism. Asiri has a preaching/teaching ministry in his local church (and outside) and is passionate about serving the urban poor. Asiri is also writing his first book on Paul's letter to the Philippians and he is an author at 'Our Daily Bread'. Asiri is married to Cheryl and they have two kids, Yasas (6) and Yeheli (3). Asiri is also a singer-songwriter and loves reading, watching movies and playing cricket.",
+      "Asiri Fernando (MDiv, Trinity Evangelical Divinity School, USA) is serving with  Youth for Christ, Sri Lanka, leading the work in the mountain regions. He is actively involved in teaching and giving pastoral care to staff and volunteers engaged in grassroots evangelism. Asiri has a preaching/teaching ministry in his local Church as well as internationally. He is the author of ‘Unstoppable: Total Devotion to the Gospel’; a study of Philippians.  He is also passionate about serving the urban poor. Asiri is married to Cheryl and they have two kids, Yasas (8) and Yeheli (5).",
   },
   {
     title: "Jason Mandryk",
