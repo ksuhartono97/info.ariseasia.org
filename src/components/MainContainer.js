@@ -30,6 +30,10 @@ const MainContainer = () => {
       link: "https://form.jotform.com/231630446225449",
     },
     {
+      title: "Innovation Lab Signup",
+      link: "/innovation-lab.pdf",
+    },
+    {
       title: "Spotify Playlist",
       link: "https://open.spotify.com/playlist/7nlYXCTiicyRnnuGSH7zh7?si=ODnIjmzCRgCi81YbHMUa3Q",
     },
