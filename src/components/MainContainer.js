@@ -29,7 +29,7 @@ const MainContainer = () => {
       title: "Spotify Playlist",
       link: "https://open.spotify.com/playlist/7nlYXCTiicyRnnuGSH7zh7?si=ODnIjmzCRgCi81YbHMUa3Q",
     },
-    { title: "FAQ", link: "/faq" },
+    // { title: "FAQ", link: "/faq" },
   ];
   const scheduleItems = [
     { title: "Day 1 - Tue, July 25", link: "/schedule/day-1.jpg" },

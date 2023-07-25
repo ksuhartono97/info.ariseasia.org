@@ -29,7 +29,7 @@ const Navbar = () => {
         <DrawerContent>
           <DrawerBody>
             <DrawerCloseButton />
-            <Center h="100%">
+            <Center h="100%" pb="10%">
               <VStack gap={9} textStyle="unbounded_light">
                 <Center flexDir="column" href="/">
                   <Image
@@ -47,7 +47,7 @@ const Navbar = () => {
                 <Link href="/speakers">Speaker Bios</Link>
                 <Link href="/translation">Session Translation Zoom Links</Link>
                 <Link href="/breakouts">Breakout Room Assignments</Link>
-                <Link href="/faq">FAQ</Link>
+                {/* <Link href="/faq">FAQ</Link> */}
 
                 <Tag
                   bgColor="#FF6B00"
@@ -102,7 +102,6 @@ const Navbar = () => {
             INFO @ ARISE ASIA 2023
           </Text>
         </HStack>
-        <Box w="1.5em" />
 
         <Box display={"flex"} h="100%">
           <Image
