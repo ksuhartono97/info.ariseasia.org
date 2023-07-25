@@ -43,7 +43,7 @@ const Navbar = () => {
                 </Center>
 
                 <Link href="/schedule">Program Schedule</Link>
-                <Link href="/workshop">Workshops</Link>
+                <Link href="/workshops">Workshops</Link>
                 <Link href="/speakers">Speaker Bios</Link>
                 <Link href="/translation">Session Translation Zoom Links</Link>
                 <Link href="/breakouts">Breakout Room Assignments</Link>
