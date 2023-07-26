@@ -25,6 +25,7 @@ const MainContainer = () => {
     { title: "Venue Walking Directions", link: "/walking-directions.pdf" },
     { title: "Country/Region Breakout Room Assignments", link: "/breakouts" },
     { title: "Night Time Fellowship Info", link: "/fellowship-night.png" },
+    {title: "Panel Q&A Links", link: "/panel-questions"},
     {
       title: "GO NOW Applications",
       link: "https://form.jotform.com/231630446225449",
@@ -101,6 +102,9 @@ const MainContainer = () => {
       title: "Sat, July 29 Morning",
       link: "https://us02web.zoom.us/j/81045025169?pwd=M0pEeWpuaG10Wjg5NTJOS0o0VmZiQT09",
     },
+  ];
+  const panelQAndAItems = [
+    { title: "Day 2 - Wed, July 25: Digital Ministry", link: "https://www.menti.com/al64e1kvx34m?source=qr-page" },
   ];
   const breakoutItems = {
     headers: ["Country/Region", "Room Number"],
@@ -181,6 +185,14 @@ const MainContainer = () => {
         element={
           <LayoutContainer title="Session Translation Zoom Links">
             <CardSection items={translationItems} />
+          </LayoutContainer>
+        }
+      />
+      <Route
+        path="/panel-questions"
+        element={
+          <LayoutContainer title="Panel Q&A Links">
+            <CardSection items={panelQAndAItems} />
           </LayoutContainer>
         }
       />
