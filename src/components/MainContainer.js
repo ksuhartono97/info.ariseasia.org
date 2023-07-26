@@ -23,7 +23,7 @@ const MainContainer = () => {
     { title: "Session Translation Zoom Links", link: "/translation" },
     { title: "Impact Center Floor Map", link: "/floor-map.pdf" },
     { title: "Venue Walking Directions", link: "/walking-directions.pdf" },
-    { title: "Breakout Room Assignments", link: "/breakouts" },
+    { title: "Country/Region Breakout Room Assignments", link: "/breakouts" },
     { title: "Night Time Fellowship Info", link: "/fellowship-night.png" },
     {
       title: "GO NOW Applications",
