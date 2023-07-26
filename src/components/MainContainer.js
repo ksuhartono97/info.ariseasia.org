@@ -7,8 +7,7 @@ import TableSection from "./TableSection";
 import { Route, Routes } from "react-router-dom";
 import {
   plenarySpeakers,
-  workshopSpeakers,
-  faqItems,
+  workshopSpeakers
 } from "../data/speakers.js";
 
 const MainContainer = () => {
@@ -16,26 +15,23 @@ const MainContainer = () => {
     { title: "Program Schedule", link: "/schedule" },
     { title: "Workshops", link: "/workshops" },
     { title: "Speaker Bios", link: "/speakers" },
-    {
-      title: "Workshop Registration Instructions",
-      link: "/registration-instructions.jpeg",
-    },
+    { title: "Panel Q&A Links", link: "/panel-questions" },
     { title: "Session Translation Zoom Links", link: "/translation" },
-    { title: "Impact Center Floor Map", link: "/floor-map.pdf" },
-    { title: "Venue Walking Directions", link: "/walking-directions.pdf" },
-    { title: "Country/Region Breakout Room Assignments", link: "/breakouts" },
+    {
+      title: "Venue Instructions",
+      link: "/venue-instructions",
+    },
     { title: "Night Time Fellowship Info", link: "/fellowship-night.png" },
-    {title: "Panel Q&A Links", link: "/panel-questions"},
     {
       title: "GO NOW Applications",
       link: "https://form.jotform.com/231630446225449",
     },
     {
-      title: "Spotify Playlist",
-      link: "https://open.spotify.com/playlist/7nlYXCTiicyRnnuGSH7zh7?si=ODnIjmzCRgCi81YbHMUa3Q",
-    },
-    // { title: "FAQ", link: "/faq" },
+      title: "Helpful Resources",
+      link: "/helpful-resources",
+    }
   ];
+
   const scheduleItems = [
     { title: "Day 1 - Tue, July 25", link: "/schedule/day-1.jpg" },
     { title: "Day 2 - Wed, July 26", link: "/schedule/day-2.jpg" },
@@ -104,7 +100,9 @@ const MainContainer = () => {
     },
   ];
   const panelQAndAItems = [
-    { title: "Day 2 - Wed, July 25: Digital Ministry", link: "https://www.menti.com/al64e1kvx34m?source=qr-page" },
+    { title: "Day 2 - Wed, July 26: Digital Ministry", link: "https://www.menti.com/al64e1kvx34m?source=qr-page" },
+    { title: "Day 3 - Thu, July 27: Justice Issues", link: "https://www.menti.com/alhtdhia3wgn" },
+    { title: "Day 4 - Fri, July 28: Business as Missions", link: "https://www.menti.com/alyvnmvgh1oq" },
   ];
   const breakoutItems = {
     headers: ["Country/Region", "Room Number"],
@@ -129,6 +127,19 @@ const MainContainer = () => {
       ["Free to Choose", "--"],
     ],
   };
+  const venueItems = [
+    { title: "Impact Center Floor Map", link: "/floor-map.pdf" },
+    { title: "Ibis to Impact Walking Directions", link: "/walking-directions.pdf" },
+    { title: "Country/Region Breakout Room Assignments", link: "/breakouts" },
+  ];
+  const resourceItems = [
+    { title: "Unstoppable by Asiri Fernando E-Book", link: "/asiri-book.jpeg" },
+    { title: "Awaken Generation Online Worship Mentoring School ", link: "/awaken-generation.jpeg" },
+    {
+      title: "Spotify Playlist",
+      link: "https://open.spotify.com/playlist/7nlYXCTiicyRnnuGSH7zh7?si=ODnIjmzCRgCi81YbHMUa3Q",
+    },
+  ];
 
   return (
     <Routes>
@@ -205,10 +216,18 @@ const MainContainer = () => {
         }
       />
       <Route
-        path="/faq"
+        path="/venue-instructions"
         element={
-          <LayoutContainer title="FAQ">
-            <AccordionSection items={faqItems} />
+          <LayoutContainer title="Venue Instructions">
+            <CardSection items={venueItems} />
+          </LayoutContainer>
+        }
+      />
+      <Route
+        path="/helpful-resources"
+        element={
+          <LayoutContainer title="Helpful Resources">
+            <CardSection items={resourceItems} />
           </LayoutContainer>
         }
       />

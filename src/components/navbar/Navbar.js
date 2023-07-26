@@ -45,10 +45,10 @@ const Navbar = () => {
                 <Link href="/schedule">Program Schedule</Link>
                 <Link href="/workshops">Workshops</Link>
                 <Link href="/speakers">Speaker Bios</Link>
-                <Link href="/translation">Session Translation Zoom Links</Link>
                 <Link href="/panel-questions">Panel Q&A Links</Link>
-                <Link href="/breakouts">Country/Region Breakout Room Assignments</Link>
-                {/* <Link href="/faq">FAQ</Link> */}
+                <Link href="/translation">Session Translation Zoom Links</Link>
+                <Link href="/venue-instructions">Venue Instructions</Link>
+                <Link href="/helpful-resources">Helpful Resources</Link>
 
                 <Tag
                   bgColor="#FF6B00"
