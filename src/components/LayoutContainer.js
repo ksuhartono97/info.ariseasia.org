@@ -1,6 +1,6 @@
 import { Center, Container, Text } from "@chakra-ui/react";
 
-const LayoutContainer = ({ children, title, subtitle }) => (
+const LayoutContainer = ({ children, title, subtitle, footer }) => (
   <Container maxW="xl" pb={60}>
     <Container pb="4vh">
       <Center pt="18vh" pb="4vh">
@@ -13,10 +13,10 @@ const LayoutContainer = ({ children, title, subtitle }) => (
           {title}
         </Text>
       </Center>
-      {subtitle &&
-        subtitle.split("\n").map((item) => <Text pb="1vh">{item}</Text>)}
+      {subtitle}
     </Container>
     {children}
+    <Container pt="4vh">{footer}</Container>
   </Container>
 );
 

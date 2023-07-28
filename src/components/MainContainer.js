@@ -5,17 +5,18 @@ import NotFoundPage from "./NotFoundPage";
 import React from "react";
 import TableSection from "./TableSection";
 import { Route, Routes } from "react-router-dom";
+import { Text } from "@chakra-ui/react";
 import { plenarySpeakers, workshopSpeakers } from "../data/speakers";
 
 const MainContainer = () => {
   const homeItems = [
     {
-      title: "Costly Generosity in Action",
-      link: "/giving",
-    },
-    {
       title: "123 GO Response",
       link: "https://forms.gle/wVHrbRnnEAfgq3VH6",
+    },
+    {
+      title: "Costly Generosity in Action",
+      link: "/giving",
     },
     {
       title: "Program Schedule",
@@ -45,9 +46,8 @@ const MainContainer = () => {
       link: "https://www.totalideas.org/Costly-Generosity-In-Action",
     },
   ];
-  const givingBlurb = `"And now, brothers and sisters, we want you to know about the grace that God has given the Macedonian churches. In the midst of a very severe trial, their overflowing joy and their extreme poverty welled up in rich generosity. For I testify that they gave as much as they were able, and even beyond their ability." (2 Corinthians 8:1-3, NIV)
-
-Arise Asia 2023 started with a vision to inspire the next generation to take the gospel throughout Asia and to the world. Over the past few days, we have been tremendously blessed by the move of God through the messages, worship, sessions, workshops, panels, and many others that would be too long to list them all out. And from the messages and exhortations, we were challenged to answer the call that it is more blessed to give than to receive.
+  const givingVerse = `"And now, brothers and sisters, we want you to know about the grace that God has given the Macedonian churches. In the midst of a very severe trial, their overflowing joy and their extreme poverty welled up in rich generosity. For I testify that they gave as much as they were able, and even beyond their ability."`;
+  const givingBlurb = `Arise Asia 2023 started with a vision to inspire the next generation to take the gospel throughout Asia and to the world. Over the past few days, we have been tremendously blessed by the move of God through the messages, worship, sessions, workshops, panels, and many others that would be too long to list them all out. And from the messages and exhortations, we were challenged to answer the call that it is more blessed to give than to receive.
 
 Now is the time to respond with generosity as we give towards the Costly Generosity in Action to raise all the funds needed as we come to the close of Arise Asia 2023. Are you ready to rise to the challenge and partner together in generosity?`;
   const scheduleItems = [
@@ -196,7 +196,20 @@ Now is the time to respond with generosity as we give towards the Costly Generos
         element={
           <LayoutContainer
             title="Costly Generosity in Action"
-            subtitle={givingBlurb}
+            subtitle={
+              <>
+                <Text as="i">{givingVerse}</Text>
+                <Text textAlign="right" pt="1em">
+                  2 Corinthians 8:1-3, NIV
+                </Text>
+              </>
+            }
+            footer={
+              givingBlurb &&
+              givingBlurb
+                .split("\n")
+                .map((item) => <Text pb="1vh">{item}</Text>)
+            }
           >
             <CardSection items={givingItems} />
           </LayoutContainer>
