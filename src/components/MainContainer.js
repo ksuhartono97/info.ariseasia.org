@@ -10,10 +10,10 @@ import { plenarySpeakers, workshopSpeakers } from "../data/speakers";
 
 const MainContainer = () => {
   const homeItems = [
-    {
-      title: "Arise Asia Conference Response - 123 GO",
-      link: "https://forms.gle/wVHrbRnnEAfgq3VH6",
-    },
+    // {
+    //   title: "Arise Asia Conference Response - 123 GO",
+    //   link: "https://forms.gle/wVHrbRnnEAfgq3VH6",
+    // },
     {
       title: "Costly Generosity in Action",
       link: "/giving",
@@ -97,6 +97,10 @@ Now is the time to respond with generosity as we give towards the Costly Generos
   ];
   const resourceItems = [
     {
+      title: "Venue Instructions",
+      link: "/venue-instructions",
+    },
+    {
       title: "Workshops",
       link: "/workshops",
     },
@@ -111,15 +115,7 @@ Now is the time to respond with generosity as we give towards the Costly Generos
     {
       title: "Spotify Playlist",
       link: "https://open.spotify.com/playlist/7nlYXCTiicyRnnuGSH7zh7?si=ODnIjmzCRgCi81YbHMUa3Q",
-    },
-    {
-      title: "Venue Instructions",
-      link: "/venue-instructions",
-    },
-    {
-      title: "Night Time Fellowship Info",
-      link: "/fellowship-night.png",
-    },
+    }
   ];
   const workshopItems = [
     {
