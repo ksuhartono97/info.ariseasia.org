@@ -1,5 +1,5 @@
 import MainContainer from "./components/MainContainer";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar";
 import theme from "./theme";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider, Container } from "@chakra-ui/react";

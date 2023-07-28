@@ -1,21 +1,20 @@
-import React from "react";
-import BackButton from "../back-button/BackButton";
+import BackButton from "./BackButton";
 import {
-  Flex,
-  HStack,
-  Text,
-  Image,
   Box,
-  Tag,
-  Link,
+  Center,
   Drawer,
-  DrawerOverlay,
-  DrawerContent,
   DrawerBody,
   DrawerCloseButton,
-  useDisclosure,
-  Center,
+  DrawerContent,
+  DrawerOverlay,
+  Flex,
+  HStack,
+  Image,
+  Link,
+  Tag,
+  Text,
   VStack,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { Link as RLink } from "react-router-dom";
 
@@ -32,22 +31,16 @@ const Navbar = () => {
             <Center h="100%" pb="10%">
               <VStack gap={9} textStyle="unbounded_light">
                 <Center flexDir="column" href="/">
-                  <Image
-                    mb={3}
-                    src={process.env.PUBLIC_URL + "/logo512.png"}
-                    w="5em"
-                  />
+                  <Image mb={3} src="/logo512.png" w="5em" />
                   <Text color="#FF6B00" textStyle="unbounded_bold">
                     ARISE ASIA 2023
                   </Text>
                 </Center>
 
                 <Link href="/schedule">Program Schedule</Link>
-                <Link href="/workshops">Workshops</Link>
                 <Link href="/speakers">Speaker Bios</Link>
-                <Link href="/panel-questions">Panel Q&A Links</Link>
+                <Link href="/giving">Giving</Link>
                 <Link href="/translation">Session Translation Zoom Links</Link>
-                <Link href="/venue-instructions">Venue Instructions</Link>
                 <Link href="/helpful-resources">Helpful Resources</Link>
 
                 <Tag
@@ -94,21 +87,21 @@ const Navbar = () => {
           to="/"
           _hover={{ textDecoration: "none" }}
         >
-          <Image src={process.env.PUBLIC_URL + "/logo512.png"} h="80%" />
+          <Image src="/logo512.png" h="50%" />
           <Text
             fontSize={["sm", "lg"]}
             textStyle="unbounded_bold"
             color="#FF6B00"
           >
-            INFO @ ARISE ASIA 2023
+            ARISE ASIA 2023 INFO
           </Text>
         </HStack>
 
-        <Box display={"flex"} h="100%">
+        <Box display="flex" h="100%">
           <Image
-            w="1.5em"
-            minW="1.5em"
-            src={process.env.PUBLIC_URL + "/images/menu.svg"}
+            w="1.4em"
+            minW="1.4em"
+            src="/images/menu.svg"
             alt="Menu Button"
             onClick={onOpen}
           />
