@@ -10,10 +10,10 @@ import { plenarySpeakers, workshopSpeakers } from "../data/speakers";
 
 const MainContainer = () => {
   const homeItems = [
-    // {
-    //   title: "123 GO Response",
-    //   link: "https://forms.gle/wVHrbRnnEAfgq3VH6",
-    // },
+    {
+      title: "Arise Asia Conference Response - 123 GO",
+      link: "https://forms.gle/wVHrbRnnEAfgq3VH6",
+    },
     {
       title: "Costly Generosity in Action",
       link: "/giving",
