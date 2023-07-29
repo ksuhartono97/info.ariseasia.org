@@ -10,10 +10,14 @@ import { plenarySpeakers, workshopSpeakers } from "../data/speakers";
 
 const MainContainer = () => {
   const homeItems = [
-    // {
-    //   title: "Arise Asia Conference Response - 123 GO",
-    //   link: "https://forms.gle/wVHrbRnnEAfgq3VH6",
-    // },
+    {
+      title: "Conference Feedback Form",
+      link: "https://form.jotform.com/232083259368462",
+    },
+    {
+      title: "GO NOW Applications",
+      link: "https://form.jotform.com/231630446225449",
+    },
     {
       title: "Costly Generosity in Action",
       link: "/giving",
@@ -25,10 +29,6 @@ const MainContainer = () => {
     {
       title: "Speaker Bios",
       link: "/speakers",
-    },
-    {
-      title: "GO NOW Applications",
-      link: "https://form.jotform.com/231630446225449",
     },
     {
       title: "Session Translation Zoom Links",
@@ -115,7 +115,7 @@ Now is the time to respond with generosity as we give towards the Costly Generos
     {
       title: "Spotify Playlist",
       link: "https://open.spotify.com/playlist/7nlYXCTiicyRnnuGSH7zh7?si=ODnIjmzCRgCi81YbHMUa3Q",
-    }
+    },
   ];
   const workshopItems = [
     {
