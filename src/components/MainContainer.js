@@ -15,6 +15,10 @@ const MainContainer = () => {
       link: "https://form.jotform.com/232083259368462",
     },
     {
+      title: "Arise Asia Conference Response - 123 GO",
+      link: "https://forms.gle/wVHrbRnnEAfgq3VH6",
+    },
+    {
       title: "GO NOW Applications",
       link: "https://form.jotform.com/231630446225449",
     },
